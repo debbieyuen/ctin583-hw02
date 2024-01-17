@@ -9,7 +9,13 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // store the user's name
+        string username;
+        // name the username "xidodan"
+        username = "xiaodan';
+
+        //print thia message
+        Console.WriteLine("My player's name is " + username);
     }
 
     // Update is called once per frame
@@ -24,11 +30,13 @@ public class PlayerController : MonoBehaviour
     [Tooltip("How far player moves horizontally")][SerializeField] float xRange = 10f;
     [Tooltip("How far player moves vertically")][SerializeField] float yRange = 10f;
 
+    //enable when this script is enabled
     private void OnEnable()
     {
         movement.Enable();
     }
 
+   // disable when this script is disabled
     private void OnDisable()
     {
         movement.Disable();
