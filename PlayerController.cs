@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
         // store the user's name
         string username;
         // name the username "xidodan"
-        username = "xiaodan';
+        username = "xiaodan";
 
         //print thia message
         Console.WriteLine("My player's name is " + username);
