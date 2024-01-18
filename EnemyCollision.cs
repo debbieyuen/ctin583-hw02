@@ -14,7 +14,8 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Movement();
+        Shoot();
     }
     
     
@@ -39,4 +40,12 @@ public class EnemyCollision : MonoBehaviour
     }
 
     // TODO: Problem 3: Define a public class named Weapon. In the class, define 3 int variables for arrow, sword, and rocket.
+    public class Weapons
+    {
+        int arrow; //can also be int arrow = 1; if value needs to be set now
+        int sword;
+        int rocket;
+
+    }
+
 }
