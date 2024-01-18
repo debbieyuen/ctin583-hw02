@@ -14,7 +14,8 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Shoot()
+        Movement()
     }
     
     
