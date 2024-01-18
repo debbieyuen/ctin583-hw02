@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
-{
+{   private string username;
     // TODO: Problem 1: Define a private variable for your player or character's name and print it out to Unity's console
     // Start is called before the first frame update
     void Start()
     {
-        
+        username = "SANS";
+        Debug.Log("My player's name is" + username);
     }
 
     // Update is called once per frame
