@@ -6,9 +6,12 @@ public class EnemyCollision : MonoBehaviour
 {
     // TODO: Problem 2: Call the Movement and Shoot functions.
     // Start is called before the first frame update
+
+    // Problem 2
     void Start()
     {
-        
+        Movement();
+        Shoot();
     }
 
     // Update is called once per frame
@@ -39,4 +42,13 @@ public class EnemyCollision : MonoBehaviour
     }
 
     // TODO: Problem 3: Define a public class named Weapon. In the class, define 3 int variables for arrow, sword, and rocket.
+
+
+    // Problem 3
+    public class Weapons
+    {
+        public int arrow;
+        public int sword;
+        public int rocket;
+    }
 }
