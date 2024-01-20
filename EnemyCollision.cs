@@ -8,13 +8,15 @@ public class EnemyCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // You can call Movement and Shoot in the Update method if you want them to be continuously executed.
+        Movement();
+        Shoot();
     }
     
     
@@ -39,4 +41,10 @@ public class EnemyCollision : MonoBehaviour
     }
 
     // TODO: Problem 3: Define a public class named Weapon. In the class, define 3 int variables for arrow, sword, and rocket.
+    public class Weapon
+    {
+        int arrow;
+        int sword;
+        int rocket;
+    }
 }
