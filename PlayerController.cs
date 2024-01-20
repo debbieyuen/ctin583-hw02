@@ -3,32 +3,28 @@ using System.Collections;	//importing library functions and types
 using System.Collections.Generic;	//importing library functions and types
 using UnityEngine;	//importing library functions and types
 
-//Declaring player controller class
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour	//Declaring player controller class
 
 {
-	private string playerName;
+	private string playerName; //defining a private variable called playerName
     // TODO: Problem 1: Define a private variable for your player or character's name and print it out to Unity's console
-    // Start is called before the first frame update
-    void Start()
+    
+    void Start()	// Start is called before the first frame update
     {
-		//assigning a player name
-		playerName = "Deckard Cain";
-		// Print the player's name to the console
-        Debug.Log(playerName);
+		playerName = "Deckard Cain";	//assigning a player name
+        Debug.Log(playerName);	// Print the player's name to the console
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update()	// Update is called once per frame
     {
         
     }
 
-    [Header("General Setup Settings")]
-    [SerializeField] private InputAction movement;
-    [Tooltip("How fast player moves up and down based upon player input")][SerializeField] float controlSpeed = 30f;
-    [Tooltip("How far player moves horizontally")][SerializeField] float xRange = 10f;
-    [Tooltip("How far player moves vertically")][SerializeField] float yRange = 10f;
+    [Header("General Setup Settings")]		//creating a header
+    [SerializeField] private InputAction movement;	//declaring private variable named movement
+    [Tooltip("How fast player moves up and down based upon player input")][SerializeField] float controlSpeed = 30f; //declaring variable controlspeed
+    [Tooltip("How far player moves horizontally")][SerializeField] float xRange = 10f;	//declaring variable xRange
+    [Tooltip("How far player moves vertically")][SerializeField] float yRange = 10f;	//declaring variavle yRange
 
     private void OnEnable()	//calling this function when checkbox is ticked
     {
