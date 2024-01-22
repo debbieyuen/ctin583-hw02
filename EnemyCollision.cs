@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
-{
+{   
+    public class Weapons 
+    {
+        int arrow = 1
+        int sword = 2
+        int rocket = 3
+    }
     // TODO: Problem 2: Call the Movement and Shoot functions.
     // Start is called before the first frame update
     void Start()
@@ -14,7 +20,8 @@ public class EnemyCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Shoot()
+        Movement()
     }
     
     
